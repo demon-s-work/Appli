@@ -1,4 +1,5 @@
 using Appli.Dal.Context;
+using Mapd.Server.Dao.Repositories;
 using Mapd.Server.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,7 +20,8 @@ namespace Mapd.Server
 			services.AddDbContext<ApplicationDbContext>(options => options.UseMySQL(connectionString));
 			services.AddControllers();
 			services.AddEndpointsApiExplorer();
-			services.AddScoped<TaskService>();
+			services.AddScoped<NoteController>();
+			services.AddScoped<NoteRepository>();
 		}
 
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

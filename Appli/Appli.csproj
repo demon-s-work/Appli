@@ -25,6 +25,7 @@
 
     <ItemGroup>
       <Folder Include="Dal\Models\" />
+      <Folder Include="Dao\Models\" />
       <Folder Include="Migrations\" />
     </ItemGroup>
 
