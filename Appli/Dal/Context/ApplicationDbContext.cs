@@ -1,4 +1,4 @@
-using Appli.Dal.Models;
+using Appli.Dal.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Appli.Dal.Context
@@ -15,6 +15,6 @@ namespace Appli.Dal.Context
 			Database.EnsureCreated();
 		}
 		
-		public DbSet<User> Users { get; set; }
+		public DbSet<Note> Notes { get; set; }
 	}
 }

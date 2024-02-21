@@ -1,6 +1,6 @@
-using Appli.Dal.Models.Abstractions;
+using Appli.Dal.Entities.Abstractions;
 
-namespace Appli.Dal.Models
+namespace Appli.Dal.Entities
 {
 	public class User : BaseEntity
 	{
